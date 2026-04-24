@@ -13,6 +13,8 @@ ping -c 4 192.168.59.103
 **Objetivo:**  
 Confirmar que as máquinas virtuais conseguem se comunicar pela rede interna.
 
+![Ping Metasploitable](images/ping-metasploitable.png)
+
 ---
 
 ### 2. Enumerar serviços disponíveis
@@ -26,6 +28,8 @@ nmap -sV -p 21,22,80,445,139 192.168.59.103
 **Objetivo:**  
 Identificar quais serviços estão ativos e verificar se o FTP está disponível.
 
+![NMAP](images/nmap-scan.png)
+
 ---
 
 ### 3. Confirmar acesso ao serviço FTP
@@ -38,6 +42,8 @@ ftp 192.168.59.103
 
 **Objetivo:**  
 Validar que o serviço FTP está realmente ativo e acessível.
+
+![FTP](images/conexao-ftp.png)
 
 ---
 
@@ -60,6 +66,8 @@ echo -e '123456\npassword\nqwerty\nmsfadmin' > pass.txt
 **Objetivo:**  
 Preparar credenciais básicas para o ataque de força bruta.
 
+![Username e Senha](images/criacao-senhas-username.png)
+
 ---
 
 ### 5. Executar ataque de força bruta com Medusa
@@ -76,7 +84,9 @@ medusa -h 192.168.59.103 -U users.txt -P pass.txt -M ftp -t 6
 - `-U` → Lista de usuários  
 - `-P` → Lista de senhas  
 - `-M ftp` → Módulo FTP  
-- `-t 6` → Número de threads  
+- `-t 6` → Número de threads
+
+![Resultado do Medusa](images/medusa-ataque-ftp.png)
 
 ---
 
@@ -90,5 +100,7 @@ ftp 192.168.59.103
 
 **Objetivo:**  
 Confirmar que o login identificado pelo Medusa funciona corretamente.
+
+![Validação concluída](images/ataque-ftp-successful.png)
 
 ---
