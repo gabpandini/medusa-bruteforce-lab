@@ -40,8 +40,8 @@ Exemplo de IPs:
 
 | Máquina | IP |
 |--------|----|
-| Kali | 192.168.56.101 |
-| Metasploitable | 192.168.56.102 |
+| Kali | 192.168.56.102 |
+| Metasploitable | 192.168.56.103 |
 
 ---
 
@@ -50,9 +50,7 @@ Exemplo de IPs:
 ```bash
 medusa-bruteforce-lab/
 │── README.md
-│── wordlists/
-│   ├── users.txt
-│   └── passwords.txt
+│── FTP.md
 │── images/
 ```
 
