@@ -13,7 +13,7 @@ http://192.168.56.103/dvwa/login.php
 **Objetivo:**  
 Identificar o formulário que será utilizado no teste de força bruta.
 
-![DVWA Login](images/login-page.png)
+![DVWA Login](../images/login-page.png)
 
 ---
 
@@ -37,7 +37,7 @@ password
 Login
 ```
 
-![POST](images/test-login.png)
+![POST](../images/test-login.png)
 
 ---
 
@@ -99,7 +99,7 @@ Password: password
 **Objetivo:**  
 Confirmar que o login identificado pelo Medusa funciona corretamente.
 
-![Login successful](images/login-successful.png)
+![Login successful](../images/login-successful.png)
 
 ---
 
