@@ -39,6 +39,8 @@ less enum4_output.txt
 **Objetivo:**  
 Localizar usuários válidos para montar a wordlist.
 
+![Users list](../images/enum4linux-result.png)
+
 ---
 
 ### 4. Criar wordlists para o teste
@@ -79,6 +81,8 @@ medusa -h 192.168.56.103 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2 -T 5
 - `-t 2` → Poucas conexões simultâneas por host  
 - `-T 50` → Intervalo entre tentativas para reduzir detecção  
 
+![Attack result](../images/attack-smb-successful.png)
+
 ---
 
 ### 6. Validar credenciais encontradas
@@ -91,6 +95,8 @@ smbclient -L //192.168.56.103 -U msfadmin
 
 **Objetivo:**  
 Confirmar que o login encontrado pelo Medusa funciona corretamente.
+
+![Login successful](../images/login-smb-successful.png)
 
 ---
 
