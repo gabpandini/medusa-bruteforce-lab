@@ -50,9 +50,10 @@ Exemplo de IPs:
 ```bash
 medusa-bruteforce-lab/
 │── README.md
-│── FTP.md
-│── WEB.md
-│── SMB.md
+│── atacks/
+│   ├── FTP.md
+│   ├── WEB.md
+│   └── SMB.md
 │── images/
 ```
 
