@@ -51,6 +51,8 @@ Exemplo de IPs:
 medusa-bruteforce-lab/
 │── README.md
 │── FTP.md
+│── WEB.md
+│── SMB.md
 │── images/
 ```
 
